@@ -35,7 +35,10 @@ const login = async () => {
           }
         });
 
-    router.push('/users');
+    if (response.status === 200) {
+      router.push('/users');
+    }
+
   } catch (err) {
     error.value = err.message || 'An error occurred during login';
   }
