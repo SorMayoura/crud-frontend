@@ -9,12 +9,12 @@ const open = ref(false);
       <div class="flex items-center">
         <span class="text-2xl font-bold text-blue-600">Demo Router</span>
       </div>
-      <nav class="hidden md:flex space-x-16 flex-1 justify-end">
-        <router-link to="/" class="min-w-20 text-center inline-block text-gray-700 hover:text-gray-600 hover:rounded-2xl font-medium">Home</router-link>
-        <router-link to="/about" class="min-w-20 text-center inline-block text-gray-700 hover:text-gray-600 hover:rounded-2xl font-medium">About</router-link>
-        <router-link to="/users" class="min-w-20 text-center inline-block text-gray-700 hover:text-gray-600 hover:rounded-2xl font-medium">User List</router-link>
-        <router-link to="/register" class="min-w-20 text-center inline-block text-gray-700 hover:text-gray-600 hover:rounded-2xl font-medium">Register</router-link>
-        <router-link to="/login" class="min-w-20 text-center inline-block text-gray-700 hover:text-gray-600 hover:rounded-2xl font-medium">Log In</router-link>
+      <nav class="hidden md:flex space-x-6 flex-1 justify-end">
+        <router-link to="/" class="p-2 min-w-20 text-center inline-block text-gray-700 hover:text-gray-600 hover:rounded-2xl hover:bg-blue-300 font-medium">Home</router-link>
+        <router-link to="/about" class="p-2 min-w-20 text-center inline-block text-gray-700 hover:text-gray-600 hover:rounded-2xl hover:bg-blue-300 font-medium">About</router-link>
+        <router-link to="/users" class="p-2 min-w-20 text-center inline-block text-gray-700 hover:text-gray-600 hover:rounded-2xl hover:bg-blue-300 font-medium">User List</router-link>
+        <router-link to="/register" class="p-2 min-w-20 text-center inline-block text-gray-700 hover:text-gray-600 hover:rounded-2xl hover:bg-blue-300 font-medium">Register</router-link>
+        <router-link to="/login" class="p-2 min-w-20 text-center inline-block text-gray-700 hover:text-gray-600 hover:rounded-2xl hover:bg-blue-300 font-medium">Log In</router-link>
       </nav>
 
       <! -- Mobile menu button -->

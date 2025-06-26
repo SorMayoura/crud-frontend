@@ -46,9 +46,8 @@ const login = async () => {
   <div class="min-h-screen flex items-center justify-center bg-gradient-to-br">
     <div class="bg-white rounded-2xl shadow-lg p-8 w-full max-w-md">
       <h2 class="text-3xl font-bold text-center text-blue-600 pb-6">Login</h2>
-      <form @submit.prevent="login" class="space-y-10">
-        <div class="pb-6">
-
+      <form @submit.prevent="login" class="space-y-6">
+        <div>
           <input
           v-model="email"
           type="email"
@@ -58,7 +57,7 @@ const login = async () => {
           />
         </div>
 
-        <div class="pb-6">
+        <div>
         <input
             v-model="password"
             type="password"
