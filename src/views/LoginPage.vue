@@ -12,7 +12,7 @@ const error = ref('');
 const login = async () => {
   error.value = '';
 
-  if (!email.value.trim() || !password.value.trim()) {
+  if (!email.value.toString().trim() || !password.value.toString().trim()) {
     error.value = 'Email and password are required.';
     return;
   }
@@ -36,7 +36,7 @@ const login = async () => {
         });
 
     if (response.status === 200) {
-      router.push('/users');
+      await router.push('/users');
     }
 
   } catch (err) {
